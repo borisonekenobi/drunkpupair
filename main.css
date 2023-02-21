@@ -104,7 +104,6 @@ div#designs {
 
 div#designs div {
   position: relative;
-  padding: auto;
   margin: auto;
   margin-bottom: 100px;
   background-color: var(--dark-blue);
@@ -176,4 +175,152 @@ div#designs div a:hover {
 
 div#designs div a:active {
   background-color: blue; /* using random color */
+}
+
+div#partners {
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 1799px) {
+  div#partners {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  div#partners {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  div#partners {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+div#partners div {
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0%;
+  background-color: var(--dark-blue);
+  width: var(--img-size);
+}
+
+div#partners div div#img {
+  margin: 0px;
+  margin-top: 0px;
+}
+
+div#img {
+  height: var(--img-size);
+  overflow: hidden;
+}
+
+div#img img {
+  margin: 0px;
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+div#img:hover img {
+  transform: scale(0.5, 0.5) translateX(-100%) translateY(-100%);
+}
+
+p#name {
+  overflow: hidden;
+  height: 38px;
+  margin: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+div#partners div div#socials {
+  height: 40px;
+  width: 270px;
+  margin: 30px;
+  padding: 0%;
+}
+
+div#socials a {
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  transition: 0.5s;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+
+a#website {
+  background-image: url("./resources/icon-web-white.png");
+}
+
+a#youtube {
+  background-image: url("./resources/icon-yt-white.png");
+}
+
+a#instagram {
+  background-image: url("./resources/icon-insta-white.png");
+}
+
+a#discord {
+  background-image: url("./resources/icon-discord-white.png");
+}
+
+a#twitter {
+  background-image: url("./resources/icon-twitter-white.png");
+}
+
+a#facebook {
+  background-image: url("./resources/icon-fb-white.png");
+}
+
+a#website:hover {
+  background-image: url("./resources/icon-web.png");
+}
+
+a#youtube:hover {
+  background-image: url("./resources/icon-yt.png");
+}
+
+a#instagram:hover {
+  background-image: url("./resources/icon-insta.png");
+}
+
+a#discord:hover {
+  background-image: url("./resources/icon-discord.png");
+}
+
+a#twitter:hover {
+  background-image: url("./resources/icon-twitter.png");
+}
+
+a#facebook:hover {
+  background-image: url("./resources/icon-fb.png");
 }

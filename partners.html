@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Partners - drunkpupair</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,26 +18,26 @@
     <input
       class="topnav"
       type="image"
-      src="logo-white.png"
+      src="./resources/logo-white.png"
       alt="logo"
       onclick="redirectHome()"
     />
     <nav class="topnav">
-      <a href="/about.html">About</a>
-      <a href="/partners.html" id="active">Partners</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="legal.html">Legal</a>
+      <a href="./about.html">About</a>
+      <a href="./partners.html" id="active">Partners</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./legal.html">Legal</a>
     </nav>
     <div class="outer">
-      <div id="designs"></div>
+      <div id="partners"></div>
     </div>
 
-    <script type="module" src="import-partners.js"></script>
     <script>
       function redirectHome() {
         location.href = "./home.html";
       }
     </script>
+    <script type="module" src="./scripts/import-partners.js"></script>
   </body>
 </html>
