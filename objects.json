@@ -1,8 +1,7 @@
 [
   {
     "title": "[4k] MALEV Hungarian Airlines Airbus A310-300",
-    "description": "This is a fictional MALEV livery for the Airbus A310-300",
-    "link": ""
+    "description": "This is a fictional MALEV livery for the Airbus A310-300"
   },
   {
     "title": "[Ultra] MALEV Hungarian Airlines Boeing 787-10",
@@ -58,7 +57,8 @@
   },
   {
     "title": "MALEV Daher TBM930",
-    "description": "This is a fictional MALEV livery for the Daher TBM 930. (8k texture)\nV2.0 changes:\n-fixed bug after Sim Update 5\n-blue winglets with tricolor\n-\"Hungarian Airlines\" text is no longer implemented \n-nose is no longer a metalic blue"
+    "description": "This is a fictional MALEV livery for the Daher TBM 930. (8k texture)\nV2.0 changes:\n-fixed bug after Sim Update 5\n-blue winglets with tricolor\n-\"Hungarian Airlines\" text is no longer implemented \n-nose is no longer a metalic blue",
+    "link": "./downloads/TPtbm-livery-MALEV_cqvLW.zip"
   },
   {
     "title": "MALEV Cessna c172 HA-SJX (G1000)",

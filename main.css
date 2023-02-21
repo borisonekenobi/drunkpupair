@@ -1,10 +1,14 @@
 :root {
   --img-size: 350px;
   --button-margin: 20px;
+
+  --dark-blue: #070b21;
+  --blue: #10184a;
+  --light-blue: #00d1ff;
 }
 
 body {
-  background-color: #070b21;
+  background-color: var(--dark-blue);
   margin: 25;
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
@@ -13,9 +17,17 @@ body {
 
 nav.topnav {
   left: 0px;
-  background-color: #070b21;
+  background-color: var(--dark-blue);
   width: 100%;
   text-align: center;
+}
+
+input.topnav {
+  position: absolute;
+  display: block;
+  padding: 0px 16px;
+  height: 48px;
+  transition: 0.3s;
 }
 
 .topnav a {
@@ -32,11 +44,16 @@ nav.topnav {
 
 .topnav a:hover {
   background-color: white;
-  color: #070b21;
+  color: var(--dark-blue);
+}
+
+.topnav a#active {
+  background-color: white;
+  color: var(--dark-blue);
 }
 
 div.outer {
-  background-color: #10184a;
+  background-color: var(--blue);
   height: fit-content;
 }
 
@@ -55,12 +72,42 @@ div#designs {
   grid-template-columns: auto auto auto auto;
 }
 
+@media screen and (max-width: 1799px) {
+  div#designs {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  div#designs {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  div#designs {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
 div#designs div {
   position: relative;
   padding: auto;
   margin: auto;
   margin-bottom: 100px;
-  background-color: #070b21;
+  background-color: var(--dark-blue);
   width: var(--img-size);
 }
 
@@ -70,7 +117,7 @@ div#designs div div {
   color: red;
   padding: 0;
   margin: 0;
-  background-color: #070b21;
+  background-color: var(--dark-blue);
   overflow: hidden;
   height: var(--img-size);
 }
@@ -108,7 +155,7 @@ div#designs div a {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: #00d1ff;
+  background-color: var(--light-blue);
   color: white;
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
@@ -124,9 +171,9 @@ div#designs div a#no-link {
 }
 
 div#designs div a:hover {
-  background-color: dodgerblue;
+  background-color: dodgerblue; /* using random color */
 }
 
 div#designs div a:active {
-  background-color: blue;
+  background-color: blue; /* using random color */
 }

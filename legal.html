@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal - drunkpupair</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input
+      class="topnav"
+      type="image"
+      src="logo-white.png"
+      alt="logo"
+      onclick="redirectHome()"
+    />
+    <nav class="topnav">
+      <a href="/about.html">About</a>
+      <a href="/partners.html">Partners</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="legal.html" id="active">Legal</a>
+    </nav>
+    <div class="outer">
+      <div id="designs"></div>
+    </div>
+
+    <script type="module" src="import-partners.js"></script>
+    <script>
+      function redirectHome() {
+        location.href = "./home.html";
+      }
+    </script>
+  </body>
+</html>
