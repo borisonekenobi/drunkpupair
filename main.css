@@ -1,0 +1,132 @@
+:root {
+  --img-size: 350px;
+  --button-margin: 20px;
+}
+
+body {
+  background-color: #070b21;
+  margin: 25;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+nav.topnav {
+  left: 0px;
+  background-color: #070b21;
+  width: 100%;
+  text-align: center;
+}
+
+.topnav a {
+  margin: 0;
+  padding: 0%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #070b21;
+}
+
+div.outer {
+  background-color: #10184a;
+  height: fit-content;
+}
+
+input.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+div#designs {
+  margin: auto;
+  margin-top: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+div#designs div {
+  position: relative;
+  padding: auto;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #070b21;
+  width: var(--img-size);
+}
+
+div#designs div div {
+  position: relative;
+  text-align: center;
+  color: red;
+  padding: 0;
+  margin: 0;
+  background-color: #070b21;
+  overflow: hidden;
+  height: var(--img-size);
+}
+
+div#designs div div img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  transition: 0.5s;
+}
+
+div#designs div div:hover img {
+  transform: scale(0.5, 0.5) translateX(-100%);
+}
+
+p#discontinued-tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+p#title {
+  overflow: hidden;
+  height: 38px;
+  margin: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+div#designs div a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00d1ff;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin: var(--button-margin);
+  padding: 0px;
+  width: calc(100% - 2 * var(--button-margin));
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+div#designs div a#no-link {
+  background-color: grey;
+}
+
+div#designs div a:hover {
+  background-color: dodgerblue;
+}
+
+div#designs div a:active {
+  background-color: blue;
+}
