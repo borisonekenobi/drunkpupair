@@ -1,7 +1,7 @@
-import objects from "../JSONs/models.json" assert { type: "json" };
+import models from "../JSONs/models.json" assert { type: "json" };
 
 let mainDiv = document.getElementById("designs");
-objects.forEach(object => {
+models.forEach(object => {
     let elemDiv = document.createElement('div');
 
     let imgDiv = document.createElement('div');
