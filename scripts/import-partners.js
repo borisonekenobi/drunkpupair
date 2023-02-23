@@ -1,4 +1,4 @@
-import partners from "../JSONs/partners.json" assert { type: "json" };
+import partners from "../JSONs/partners.js";
 
 let mainDiv = document.getElementById("partners");
 partners.forEach(partner => {

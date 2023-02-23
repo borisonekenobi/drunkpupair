@@ -1,4 +1,4 @@
-import models from "../JSONs/models.json" assert { type: "json" };
+import models from "../JSONs/models.js";
 
 let mainDiv = document.getElementById("designs");
 models.forEach(object => {
