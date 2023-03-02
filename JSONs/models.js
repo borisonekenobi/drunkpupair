@@ -77,17 +77,5 @@ export default
       "title": "MALEV Cessna c172 HA-SJX (G1000)",
       "description": "This is a semi fictional MALEV livery for the Cessna 172 G1000, based on the real livery of HA-SJX (8k textures)",
       "link": "../downloads/TP172-MALEV PS_P4exw.zip"
-    },
-    {
-      "title": "MALEV Retro livery Airbus A320neo",
-      "description": "This is a fictional retro MALEV livery for the A320neo. (8k textures)",
-      "link": "../downloads/TP-a320-livery-TPMALEV-V3_lKUvQ.zip",
-      "discontinued": true
-    },
-    {
-      "title": "Prefectura Naval Argentina King Air 350 (fictional)",
-      "description": "This is a fictional Prefectura Naval Argentina repaint for the King Air 350. (8k textures)(made as a request)",
-      "link": "../downloads/TPKing Air 350 MALEV_Fy09H.zip",
-      "discontinued": true
     }
   ];
