@@ -102,7 +102,7 @@ div#designs {
   }
 }
 
-div#designs div {
+div#wrapper {
   position: relative;
   margin: auto;
   margin-bottom: 100px;
@@ -110,7 +110,7 @@ div#designs div {
   width: var(--img-size);
 }
 
-div#designs div div {
+div#imgDiv {
   position: relative;
   text-align: center;
   color: red;
@@ -121,16 +121,23 @@ div#designs div div {
   height: var(--img-size);
 }
 
-div#designs div div img {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+div#imgDiv div#transitionDiv {
+  background-position-x: 50%;
   height: 100%;
-  transition: 0.5s;
+  width: 100%;
+  background-size: auto var(--img-size);
+  background-repeat: no-repeat;
+
+  -webkit-transition: background-size 1500ms ease;
+  -moz-transition: background-size 1500 ease;
+  -o-transition: background-size 1500 ease;
+  -ms-transition: background-size 1500ms ease;
+  transition: background-size 1500ms ease;
 }
 
-div#designs div div:hover img {
-  transform: scale(0.5, 0.5) translateX(-100%);
+div#imgDiv:hover div#transitionDiv {
+  background-position-y: 50%;
+  background-size: var(--img-size) auto;
 }
 
 p#discontinued-tag {
@@ -170,11 +177,11 @@ div#designs div a#no-link {
 }
 
 div#designs div a:hover {
-  background-color: dodgerblue; /* using random color */
+  background-color: dodgerblue; /* using random color for now */
 }
 
 div#designs div a:active {
-  background-color: blue; /* using random color */
+  background-color: blue; /* using random color for now */
 }
 
 div#partners {

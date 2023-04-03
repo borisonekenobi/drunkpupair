@@ -2,13 +2,19 @@ import models from "../JSONs/models.js";
 
 let mainDiv = document.getElementById("designs");
 models.forEach(object => {
-    let elemDiv = document.createElement('div');
+    let wrapperDiv = document.createElement('div');
+    wrapperDiv.id = "wrapper";
 
     let imgDiv = document.createElement('div');
-    let img = document.createElement('img');
-    img.src = object.img != undefined ? object.img : "../resources/no-image-available.png";
-    img.alt = object.title;
-    imgDiv.appendChild(img);
+    imgDiv.id = "imgDiv";
+    let transitionDiv = document.createElement('div');
+    transitionDiv.id = "transitionDiv";
+    if (object.img != undefined) {
+        transitionDiv.style.backgroundImage = "url(" + object.img + ")";
+    } else {
+        transitionDiv.style.backgroundImage = "url(../resources/no-image-available.png)";
+    }
+    imgDiv.appendChild(transitionDiv);
 
     if (object.discontinued) {
         let discontinued = document.createElement('p');
@@ -27,9 +33,9 @@ models.forEach(object => {
     else download.href = object.link;
     download.download = object.title;
 
-    elemDiv.appendChild(imgDiv);
-    elemDiv.appendChild(title);
-    elemDiv.appendChild(download);
+    wrapperDiv.appendChild(imgDiv);
+    wrapperDiv.appendChild(title);
+    wrapperDiv.appendChild(download);
 
-    mainDiv.appendChild(elemDiv);
+    mainDiv.appendChild(wrapperDiv);
 });
