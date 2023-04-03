@@ -27,6 +27,14 @@ models.forEach(object => {
     title.id = "title";
     title.append(object.title);
 
+    let version = document.createElement('p');
+    version.id = "version";
+    version.append("Version: " + object.version);
+
+    let lastUpdated = document.createElement('p');
+    lastUpdated.id = "last-updated";
+    lastUpdated.append("Last Updated: " + object.lastUpdated);
+
     let download = document.createElement('a');
     download.append("Download");
     if (object.link == undefined || object.link == -1) download.id = "no-link";
@@ -35,6 +43,8 @@ models.forEach(object => {
 
     wrapperDiv.appendChild(imgDiv);
     wrapperDiv.appendChild(title);
+    wrapperDiv.appendChild(version);
+    wrapperDiv.appendChild(lastUpdated);
     wrapperDiv.appendChild(download);
 
     mainDiv.appendChild(wrapperDiv);
