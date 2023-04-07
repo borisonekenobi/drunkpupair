@@ -47,7 +47,7 @@ input.topnav {
   color: var(--dark-blue);
 }
 
-.topnav a#active {
+.topnav a.active {
   background-color: white;
   color: var(--dark-blue);
 }
@@ -102,7 +102,7 @@ div#designs {
   }
 }
 
-div#wrapper {
+div.wrapper {
   position: relative;
   margin: auto;
   margin-bottom: 100px;
@@ -110,7 +110,7 @@ div#wrapper {
   width: var(--img-size);
 }
 
-div#imgDiv {
+div.imgDiv {
   position: relative;
   text-align: center;
   color: red;
@@ -121,26 +121,21 @@ div#imgDiv {
   height: var(--img-size);
 }
 
-div#imgDiv div#transitionDiv {
+div.imgDiv div.transitionDiv {
   background-position-x: 50%;
+  background-position-y: 50%;
   height: 100%;
   width: 100%;
-  background-size: auto var(--img-size);
   background-repeat: no-repeat;
 
-  -webkit-transition: background-size 1500ms ease;
-  -moz-transition: background-size 1500 ease;
-  -o-transition: background-size 1500 ease;
-  -ms-transition: background-size 1500ms ease;
-  transition: background-size 1500ms ease;
+  -webkit-transition: background-size 0.5s ease;
+  -moz-transition: background-size 0.5s ease;
+  -o-transition: background-size 0.5s ease;
+  -ms-transition: background-size 0.5s ease;
+  transition: background-size 0.5s ease;
 }
 
-div#imgDiv:hover div#transitionDiv {
-  background-position-y: 50%;
-  background-size: var(--img-size) auto;
-}
-
-p#discontinued-tag {
+p.discontinued-tag {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,7 +143,7 @@ p#discontinued-tag {
   margin: 0;
 }
 
-p#title {
+p.title {
   overflow: hidden;
   height: 38px;
   margin: 30px;
@@ -158,7 +153,7 @@ p#title {
   -webkit-box-orient: vertical;
 }
 
-p#version {
+p.version {
   background-color: var(--dark-blue);
   margin: 30px;
   margin-top: 0;
@@ -168,7 +163,7 @@ p#version {
   color: white;
 }
 
-p#last-updated {
+p.last-updated {
   background-color: var(--dark-blue);
   margin: 30px;
   margin-top: 0;
@@ -192,7 +187,7 @@ div#designs div a {
   transition: 0.5s;
 }
 
-div#designs div a#no-link {
+div#designs div a.no-link {
   background-color: grey;
 }
 
@@ -251,17 +246,17 @@ div#partners div {
   width: var(--img-size);
 }
 
-div#partners div div#img {
+div#partners div div.img {
   margin: 0px;
   margin-top: 0px;
 }
 
-div#img {
+div.img {
   height: var(--img-size);
   overflow: hidden;
 }
 
-div#img img {
+div.img img {
   margin: 0px;
   width: 100%;
   position: relative;
@@ -271,11 +266,11 @@ div#img img {
   transform: translateX(-50%) translateY(-50%);
 }
 
-div#img:hover img {
+div.img:hover img {
   transform: scale(0.5, 0.5) translateX(-100%) translateY(-100%);
 }
 
-p#name {
+p.name {
   overflow: hidden;
   height: 38px;
   margin: 30px;
@@ -284,14 +279,14 @@ p#name {
   -webkit-box-orient: vertical;
 }
 
-div#partners div div#socials {
+div#partners div div.socials {
   height: 40px;
   width: 270px;
   margin: 30px;
   padding: 0%;
 }
 
-div#socials a {
+div.socials a {
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 5px 5px;
@@ -304,50 +299,50 @@ div#socials a {
   float: left;
 }
 
-a#website {
+a.website {
   background-image: url("./resources/icon-web-white.png");
 }
 
-a#youtube {
+a.youtube {
   background-image: url("./resources/icon-yt-white.png");
 }
 
-a#instagram {
+a.instagram {
   background-image: url("./resources/icon-insta-white.png");
 }
 
-a#discord {
+a.discord {
   background-image: url("./resources/icon-discord-white.png");
 }
 
-a#twitter {
+a.twitter {
   background-image: url("./resources/icon-twitter-white.png");
 }
 
-a#facebook {
+a.facebook {
   background-image: url("./resources/icon-fb-white.png");
 }
 
-a#website:hover {
+a.website:hover {
   background-image: url("./resources/icon-web.png");
 }
 
-a#youtube:hover {
+a.youtube:hover {
   background-image: url("./resources/icon-yt.png");
 }
 
-a#instagram:hover {
+a.instagram:hover {
   background-image: url("./resources/icon-insta.png");
 }
 
-a#discord:hover {
+a.discord:hover {
   background-image: url("./resources/icon-discord.png");
 }
 
-a#twitter:hover {
+a.twitter:hover {
   background-image: url("./resources/icon-twitter.png");
 }
 
-a#facebook:hover {
+a.facebook:hover {
   background-image: url("./resources/icon-fb.png");
 }

@@ -3,41 +3,64 @@ import models from "../JSONs/models.js";
 let mainDiv = document.getElementById("designs");
 models.forEach(object => {
     let wrapperDiv = document.createElement('div');
-    wrapperDiv.id = "wrapper";
+    wrapperDiv.classList.add("wrapper");
 
     let imgDiv = document.createElement('div');
-    imgDiv.id = "imgDiv";
+    imgDiv.classList.add("imgDiv");
     let transitionDiv = document.createElement('div');
-    transitionDiv.id = "transitionDiv";
+    //transitionDiv.classList.add("transitionDiv";
+    transitionDiv.classList.add("transitionDiv");
+
+    let img = new Image();
     if (object.img != undefined) {
-        transitionDiv.style.backgroundImage = "url(" + object.img + ")";
+        img.src = object.img;
     } else {
-        transitionDiv.style.backgroundImage = "url(../resources/no-image-available.png)";
+        img.src = "../resources/no-image-available.png";
     }
+
+    img.surroundingDiv = transitionDiv;
+
+    img.onload = function () {
+        let height = img.naturalHeight;
+        let width = img.naturalWidth;
+        let ratio = height / width;
+        img.surroundingDiv.bgSize = "" + ((1 / ratio) * 100) + "%";
+        img.surroundingDiv.style.backgroundSize = this.surroundingDiv.bgSize;
+    };
+
+    transitionDiv.style.backgroundImage = "url(" + img.src + ")";
+    transitionDiv.onmouseenter = function () {
+        this.style.backgroundSize = 100 + "%";
+    };
+    
+    transitionDiv.onmouseleave = function () {
+        this.style.backgroundSize = this.bgSize;
+    };
+
     imgDiv.appendChild(transitionDiv);
 
     if (object.discontinued) {
         let discontinued = document.createElement('p');
-        discontinued.id = "discontinued-tag";
+        discontinued.classList.add("discontinued-tag");
         discontinued.append("DISCONTINUED");
         imgDiv.appendChild(discontinued);
     }
 
     let title = document.createElement('p');
-    title.id = "title";
+    title.classList.add("title");
     title.append(object.title);
 
     let version = document.createElement('p');
-    version.id = "version";
+    version.classList.add("version");
     version.append("Version: " + object.version);
 
     let lastUpdated = document.createElement('p');
-    lastUpdated.id = "last-updated";
+    lastUpdated.classList.add("last-updated");
     lastUpdated.append("Last Updated: " + object.lastUpdated);
 
     let download = document.createElement('a');
     download.append("Download");
-    if (object.link == undefined || object.link == -1) download.id = "no-link";
+    if (object.link == undefined || object.link == -1) download.classList.add("no-link");
     else download.href = object.link;
     download.download = object.title;
 
