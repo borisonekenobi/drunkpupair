@@ -346,3 +346,21 @@ a.twitter:hover {
 a.facebook:hover {
   background-image: url("./resources/icon-fb.png");
 }
+ /* Legal */
+
+.legaltitle {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 28px;
+  }
+
+.legaltext {
+  margin-left:100px ;
+  margin-right: 100px;
+  padding-bottom: 100px;
+}
+
+.legallink {
+  color: var(--light-blue);
+}
