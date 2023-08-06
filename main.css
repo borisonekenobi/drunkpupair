@@ -1,5 +1,7 @@
 :root {
   --img-size: 350px;
+  --img-height: 207px;
+  --img-width: calc(var(--img-height) / 9 * 16);
   --button-margin: 20px;
 
   --dark-blue: #070b21;
@@ -107,7 +109,7 @@ div.wrapper {
   margin: auto;
   margin-bottom: 100px;
   background-color: var(--dark-blue);
-  width: var(--img-size);
+  width: var(--img-width);
 }
 
 div.imgDiv {
@@ -118,21 +120,13 @@ div.imgDiv {
   margin: 0;
   background-color: var(--dark-blue);
   overflow: hidden;
-  height: var(--img-size);
+  height: var(--img-height);
 }
 
 div.imgDiv div.transitionDiv {
-  background-position-x: 50%;
-  background-position-y: 50%;
+  background-size: contain;
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-
-  -webkit-transition: background-size 0.5s ease;
-  -moz-transition: background-size 0.5s ease;
-  -o-transition: background-size 0.5s ease;
-  -ms-transition: background-size 0.5s ease;
-  transition: background-size 0.5s ease;
 }
 
 p.discontinued-tag {

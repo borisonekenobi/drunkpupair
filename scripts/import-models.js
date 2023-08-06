@@ -8,7 +8,6 @@ models.forEach(object => {
     let imgDiv = document.createElement('div');
     imgDiv.classList.add("imgDiv");
     let transitionDiv = document.createElement('div');
-    //transitionDiv.classList.add("transitionDiv";
     transitionDiv.classList.add("transitionDiv");
 
     let img = new Image();
@@ -19,24 +18,7 @@ models.forEach(object => {
     }
 
     img.surroundingDiv = transitionDiv;
-
-    img.onload = function () {
-        let height = img.naturalHeight;
-        let width = img.naturalWidth;
-        let ratio = height / width;
-        img.surroundingDiv.bgSize = "" + ((1 / ratio) * 100) + "%";
-        img.surroundingDiv.style.backgroundSize = this.surroundingDiv.bgSize;
-    };
-
     transitionDiv.style.backgroundImage = "url(" + img.src + ")";
-    transitionDiv.onmouseenter = function () {
-        this.style.backgroundSize = 100 + "%";
-    };
-    
-    transitionDiv.onmouseleave = function () {
-        this.style.backgroundSize = this.bgSize;
-    };
-
     imgDiv.appendChild(transitionDiv);
 
     if (object.discontinued) {
