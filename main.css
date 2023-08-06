@@ -54,9 +54,10 @@ input.topnav {
   color: var(--dark-blue);
 }
 
-div.outer {
+.outer {
   background-color: var(--blue);
   height: fit-content;
+  min-height: calc(100vh - 48px - 25px);
 }
 
 input.logo {
@@ -369,4 +370,34 @@ a.facebook:hover {
   padding-top: 50px;
   padding-bottom: 0px;
   font-size: 28px;
+}
+
+.contactBox {
+  background-color: var(--dark-blue);
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contactImg {
+  width: 140px;
+  height: auto;
+  padding: 25px;
+}
+
+.contactLink {
+  color: var(--light-blue);
+  font-size: 35;
+  margin-left: 75px;
+}
+
+.contactLink.disabled {
+  color: white;
+}
+
+.contactLink:visited {
+  color: var(--light-blue);
 }
