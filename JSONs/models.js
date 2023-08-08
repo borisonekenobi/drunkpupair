@@ -122,7 +122,7 @@ export default
     {
       "title": "[8k] Airbus ACJ320neo Comlux Aviation 9H-NEW FBW A32NX",
       "link": "../downloads/FBW A32NX-livery-Comlux Aviation_AGCzM.zip",
-      "img": "../resources/models/comlux.png",
+      "img": "../resources/models/COMLUX.png",
       "version": "1.2",
       "lastUpdated": "02/04/23"
     }
