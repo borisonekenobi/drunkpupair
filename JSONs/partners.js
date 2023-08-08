@@ -30,5 +30,10 @@ export default
     "img": "../resources/PF.png",
     "website": "https://www.fs2000.org/",
     "facebook": "https://www.facebook.com/perfectflight2000/"
+  },
+  {
+    "name": "MALEV Hungarian Airlines VA",
+    "img": "../resources/MALEV VA.png",
+    "website": "https://www.fsairlines.net/en/va/MLV",
   }
 ]
