@@ -52,14 +52,14 @@ export default
     {
       "title": "[Ultra] MALEV HA-LHX Asobo 787-10",
       "link": "../downloads/TP-livery-b787-MALEV HA-LHX_RSo8b.zip",
-      "img": "../resources/models/78X MALEV.PNG",
+      "img": "../resources/models/78X MALEV.png",
       "version": "2.0",
       "lastUpdated": "02/04/23"
     },
     {
       "title": "[8k] MALEV Cessna Citation CJ4",
       "link": "../downloads/TPcj4-MALEV_ce2so.zip",
-      "img": "../resources/models/CJ4 MALEV.PNG",
+      "img": "../resources/models/CJ4 MALEV.png",
       "version": "1.0",
       "lastUpdated": "02/04/23"
     },
@@ -73,7 +73,7 @@ export default
     {
       "title": "[8k] MALEV HA-SJX Cessna C172(G1000)",
       "link": "../downloads/TP172-MALEV PS_P4exw.zip",
-      "img": "../resources/models/HA-SJX.PNG",
+      "img": "../resources/models/HA-SJX.png",
       "version": "1.0",
       "lastUpdated": "02/04/23"
     },
@@ -94,21 +94,21 @@ export default
     {
       "title": "[8k] Hungarian Air Force 604 & 605 FBW A32NX",
       "link": "../downloads/FBW HUNAF 604 n 605_gdQJ5.zip",
-      "img": "../resources/models/HUNAF.PNG",
+      "img": "../resources/models/HUNAF.png",
       "version": "1.1",
       "lastUpdated": "02/04/23"
     },
     {
       "title": "[8k] Airbus ACJ320neo SCM P4-RLA FBW A32NX",
       "link": "../downloads/FBW A32NX SCM liveries_euwbQ.zip",
-      "img": "../resources/models/SCM.PNG",
+      "img": "../resources/models/SCM.png",
       "version": "1.1",
       "lastUpdated": "02/04/23"
     },
     {
       "title": "[8k] Airbus ACJ320neo Global Jet Luxembourg M-RBUS FBW A32NX",
       "link": "../downloads/FBW A32NX liveries Global Jet Luxembourg_34CIe.zip",
-      "img": "../resources/models/Global Jet Lux.PNG",
+      "img": "../resources/models/Global Jet Lux.png",
       "version": "1.2",
       "lastUpdated": "02/04/23"
     },
@@ -122,7 +122,7 @@ export default
     {
       "title": "[8k] Airbus ACJ320neo Comlux Aviation 9H-NEW FBW A32NX",
       "link": "../downloads/FBW A32NX-livery-Comlux Aviation_AGCzM.zip",
-      "img": "../resources/models/comlux.PNG",
+      "img": "../resources/models/comlux.png",
       "version": "1.2",
       "lastUpdated": "02/04/23"
     }
